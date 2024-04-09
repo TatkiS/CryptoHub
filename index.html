@@ -1,91 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cryptocurrency Showcase</title>
-<style>
-  body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .container {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  .crypto-block {
-    border-bottom: 1px solid #ccc;
-    padding: 20px 0;
-  }
-  .crypto-name {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #333;
-  }
-  .crypto-address {
-    color: #007bff;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .crypto-network-option {
-    color: #666;
-    font-size: 14px;
-    cursor: pointer;
-    margin-bottom: 5px;
-  }
-</style>
-</head>
-<body>
+<!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <title>Cryptocurrency & Payment Showcase</title> -->
+<!-- <style> -->
+  <!-- body { -->
+    <!-- background-color: #e3f2fd; /* змінений колір неба */ -->
+    <!-- font-family: Arial, sans-serif; -->
+    <!-- margin: 0; -->
+    <!-- padding: 0; -->
+    <!-- display: flex; -->
+    <!-- justify-content: center; -->
+    <!-- align-items: center; -->
+    <!-- min-height: 100vh; -->
+  <!-- } -->
+  <!-- .container { -->
+    <!-- max-width: 600px; -->
+    <!-- width: 90%; /* змінено ширину для мобільних пристроїв */ -->
+    <!-- padding: 20px; -->
+    <!-- background-color: #fff; -->
+    <!-- border-radius: 8px; -->
+    <!-- box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -->
+  <!-- } -->
+  <!-- .crypto-block { -->
+    <!-- border-bottom: 1px solid #ccc; -->
+    <!-- padding: 20px 0; -->
+  <!-- } -->
+  <!-- .crypto-name { -->
+    <!-- font-weight: bold; -->
+    <!-- margin-bottom: 10px; -->
+    <!-- font-size: 20px; -->
+    <!-- color: #333; -->
+  <!-- } -->
+  <!-- .crypto-address { -->
+    <!-- color: #007bff; -->
+    <!-- cursor: pointer; -->
+    <!-- font-size: 16px; -->
+  <!-- } -->
+  <!-- .crypto-network-option { -->
+    <!-- color: #666; -->
+    <!-- font-size: 14px; -->
+    <!-- cursor: pointer; -->
+    <!-- margin-bottom: 5px; -->
+  <!-- } -->
+<!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
 
-<div class="container">
-  <div class="crypto-block">
-    <div class="crypto-name">USDT (TetherUS)</div>
-    <div class="crypto-network">
-      <div class="crypto-network-option" onclick="copyToClipboard('BSC')">BSC (BNB Smart Chain - BEP20)</div>
-    </div>
-    <div class="crypto-address" onclick="copyToClipboard('0x24970317186d142233ecadb48301b7f8d5872873')">0x24970317186d142233ecadb48301b7f8d5872873</div>
-  </div>
+<!-- <div class="container"> -->
+  <!-- <div class="crypto-block"> -->
+    <!-- <div class="crypto-name">USDT (TetherUS)</div> -->
+    <!-- <div class="crypto-network"> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('BSC')">BSC (BNB Smart Chain - BEP20)</div> -->
+    <!-- </div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('0x24970317186d142233ecadb48301b7f8d5872873')">0x24970317186d142233ecadb48301b7f8d5872873</div> -->
+  <!-- </div> -->
 
-  <div class="crypto-block">
-    <div class="crypto-name">BTC</div>
-    <div class="crypto-network">
-      <div class="crypto-network-option" onclick="copyToClipboard('BTC')">BTC (Bitcoin)</div>
-    </div>
-    <div class="crypto-address" onclick="copyToClipboard('183JJaKzS2tXkCJ9woXJmDDuZ7P6aLh7xt')">183JJaKzS2tXkCJ9woXJmDDuZ7P6aLh7xt</div>
-  </div>
+  <!-- <div class="crypto-block"> -->
+    <!-- <div class="crypto-name">BTC</div> -->
+    <!-- <div class="crypto-network"> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('BTC')">BTC (Bitcoin)</div> -->
+    <!-- </div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('183JJaKzS2tXkCJ9woXJmDDuZ7P6aLh7xt')">183JJaKzS2tXkCJ9woXJmDDuZ7P6aLh7xt</div> -->
+  <!-- </div> -->
 
-  <div class="crypto-block">
-    <div class="crypto-name">ETH</div>
-    <div class="crypto-network">
-      <div class="crypto-network-option" onclick="copyToClipboard('BSC')">BSC (BNB Smart Chain - BEP20)</div>
-      <div class="crypto-network-option" onclick="copyToClipboard('ETH')">ETH (Ethereum)</div>
-    </div>
-    <div class="crypto-address" onclick="copyToClipboard('0x24970317186d142233ecadb48301b7f8d5872873')">0x24970317186d142233ecadb48301b7f8d5872873</div>
-  </div>
-</div>
+  <!-- <div class="crypto-block"> -->
+    <!-- <div class="crypto-name">ETH</div> -->
+    <!-- <div class="crypto-network"> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('BSC')">BSC (BNB Smart Chain - BEP20)</div> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('ETH')">ETH (Ethereum)</div> -->
+    <!-- </div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('0x24970317186d142233ecadb48301b7f8d5872873')">0x24970317186d142233ecadb48301b7f8d5872873</div> -->
+  <!-- </div> -->
 
-<script>
-function copyToClipboard(address) {
-  var textarea = document.createElement("textarea");
-  textarea.value = address;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand("copy");
-  document.body.removeChild(textarea);
-  alert("Address copied to clipboard: " + address);
-}
-</script>
+  <!-- <div class="crypto-block"> -->
+    <!-- <div class="crypto-name">ADVCASH (volet)</div> -->
+    <!-- <div class="crypto-network"> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('Dollar')">Dollar</div> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('Euro')">Euro</div> -->
+      <!-- <div class="crypto-network-option" onclick="copyToClipboard('Hryvnia')">Hryvnia</div> -->
+    <!-- </div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('U 8132 7050 5992')">U 8132 7050 5992</div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('E 5642 2405 3048')">E 5642 2405 3048</div> -->
+    <!-- <div class="crypto-address" onclick="copyToClipboard('H 5930 0851 5170')">H 5930 0851 5170</div> -->
+  <!-- </div> -->
+<!-- </div> -->
 
-</body>
-</html>
+<!-- <script> -->
+<!-- function copyToClipboard(text) { -->
+  <!-- var textarea = document.createElement("textarea"); -->
+  <!-- textarea.value = text; -->
+  <!-- document.body.appendChild(textarea); -->
+  <!-- textarea.select(); -->
+  <!-- document.execCommand("copy"); -->
+  <!-- document.body.removeChild(textarea); -->
+  <!-- alert("Address copied to clipboard: " + text); -->
+<!-- } -->
+<!-- </script> -->
+
+<!-- </body> -->
+<!-- </html> -->
