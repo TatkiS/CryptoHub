@@ -56,6 +56,10 @@
             background-color: #26a17b;
             color: #ffffff;
         }
+        .donationalerts {
+            background-color: #fcd116; /* жовтий колір, як прапор України */
+            color: #000000;
+        }
         .link, .copyable {
             color: #ffffff;
             text-decoration: none;
@@ -70,6 +74,20 @@
         .link:hover {
             text-decoration: underline;
         }
+        .donation-button {
+            background-color: #0070ba;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .donation-button:hover {
+            background-color: #005a8d;
+        }
     </style>
     <script>
         function copyToClipboard(text) {
@@ -83,6 +101,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="block donationalerts">
+            <h2>Підтримка через DonationAlerts</h2>
+            <p>Ви можете зробити донат, перейшовши за посиланням:</p>
+            <a href="https://www.donationalerts.com/r/wavevictory" class="donation-button" target="_blank">Зробити донат</a>
+        </div>
+
         <div class="block paypal">
             <h2>PayPal</h2>
             <p>Email: <a class="copyable" onclick="copyToClipboard('sibabs1981@gmail.com')">sibabs1981@gmail.com</a></p>
@@ -90,7 +114,6 @@
 
         <div class="block wise">
             <h2>WISE (TransferWise) Euro</h2>
-          
             <p>Номер картки: <a class="copyable" onclick="copyToClipboard('4569 3334 0337 4424')">4569 3334 0337 4424</a></p>
         </div>
 
@@ -103,7 +126,6 @@
 
         <div class="block trustee">
             <h2>Trustee Plus Euro</h2>
-         
             <p>Номер картки: <a class="copyable" onclick="copyToClipboard('5557 7080 1134 2577')">5557 7080 1134 2577</a></p>
         </div>
 
